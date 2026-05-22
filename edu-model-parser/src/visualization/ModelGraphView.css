@@ -1,0 +1,126 @@
+.model-graph-view {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  padding: 12px;
+  background: #fff;
+}
+
+.model-graph-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.education-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.education-hint {
+  background: #fef3c7;
+  border: 1px solid #f59e0b;
+  color: #78350f;
+  border-radius: 6px;
+  padding: 8px;
+  font-size: 0.92rem;
+}
+
+.graph-content {
+  display: grid;
+  grid-template-columns: 1fr 280px;
+  gap: 14px;
+}
+
+.graph-canvas {
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.layer-column {
+  display: inline-flex;
+  flex-direction: column;
+  margin-right: 14px;
+  vertical-align: top;
+  min-width: 170px;
+}
+
+.layer-title {
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.graph-node {
+  text-align: left;
+  border: 1px solid #cbd5e1;
+  background: #f8fafc;
+  border-radius: 6px;
+  padding: 8px;
+  margin-bottom: 8px;
+}
+
+.graph-node.active {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.15);
+}
+
+.graph-node.highlighted {
+  background: #dbeafe;
+  border-color: #60a5fa;
+}
+
+.graph-node.education:hover {
+  background: #ecfccb;
+}
+
+.node-label {
+  display: block;
+  font-weight: 600;
+}
+
+.node-type {
+  color: #475569;
+  font-size: 0.86rem;
+}
+
+.edge-list {
+  margin-top: 8px;
+  border-top: 1px solid #e5e7eb;
+  padding-top: 8px;
+  font-size: 0.9rem;
+}
+
+.edge { margin-bottom: 4px; }
+.edge-badge {
+  margin-left: 6px;
+  font-style: normal;
+  color: #7c3aed;
+  font-size: 0.8rem;
+}
+.edge-label {
+  margin-left: 4px;
+  color: #6b7280;
+}
+
+.shape-panel {
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 10px;
+  background: #f9fafb;
+}
+
+.shape-panel dl {
+  display: grid;
+  grid-template-columns: 110px 1fr;
+  row-gap: 6px;
+  margin: 0;
+}
+.shape-panel dt {
+  font-weight: 600;
+  color: #334155;
+}
+.shape-panel dd { margin: 0; }
